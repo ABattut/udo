@@ -1,0 +1,298 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,500,700");
+/* line 17, ../../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Totem";
+  src: url("/fonts/totem.otf") format("otf");
+  src: url("/fonts/totem.svg#abcd") format("svg");
+  src: url("/fonts/totem.ttf") format("truetype");
+}
+
+/* line 18, ../sass/udo.sass */
+html, body {
+  height: 100%;
+  font-family: Raleway;
+  font-weight: 400;
+  background: url(/img/background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 25, ../sass/udo.sass */
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 29, ../sass/udo.sass */
+header {
+  text-align: center;
+  margin: auto;
+  padding: 2.5% 0 4.5%;
+}
+/* line 33, ../sass/udo.sass */
+header h1 {
+  font-family: "Totem";
+  font-size: 150px;
+  color: orangered;
+}
+
+/* line 37, ../sass/udo.sass */
+.container {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+  padding-bottom: -30px;
+}
+
+/* line 42, ../sass/udo.sass */
+main {
+  display: block;
+  width: 60%;
+  margin: auto;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 47, ../sass/udo.sass */
+main legend {
+  display: inline-block;
+  font-size: 26px;
+  height: 26px;
+  line-height: 26px;
+  margin-left: 4%;
+  position: relative;
+  z-index: 2;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+/* line 57, ../sass/udo.sass */
+main p {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  line-height: 18px;
+}
+/* line 62, ../sass/udo.sass */
+main p strong {
+  font-weight: 700;
+}
+/* line 64, ../sass/udo.sass */
+main input, main textarea {
+  display: block;
+  width: 90%;
+  margin: 15px auto;
+  height: 40px;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px / 5px;
+  border-radius: 5px / 5px;
+  border: 2px solid lightseagreen;
+  outline: none;
+  padding: 0 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 76, ../sass/udo.sass */
+main input:hover, main textarea:hover {
+  border: 2px solid #1c9c95;
+}
+/* line 78, ../sass/udo.sass */
+main input:focus, main textarea:focus {
+  border: 2px solid goldenrod;
+}
+/* line 80, ../sass/udo.sass */
+main .error {
+  border: 2px solid indianred;
+}
+/* line 82, ../sass/udo.sass */
+main input[type=button] {
+  border: none;
+  background: lightseagreen;
+  width: 250px;
+  color: #fafafa;
+  text-transform: uppercase;
+  font-family: "Totem";
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/* line 94, ../sass/udo.sass */
+main input[type=button]:hover {
+  background: goldenrod;
+}
+/* line 96, ../sass/udo.sass */
+main input[type=button]:active {
+  background: #e4b849;
+}
+/* line 98, ../sass/udo.sass */
+main textarea {
+  font-family: Helvetica;
+  min-height: 160px;
+  resize: none;
+}
+
+/* line 102, ../sass/udo.sass */
+footer {
+  position: absolute;
+  height: 30px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fafafa;
+  font-size: 14px;
+  line-height: 30px;
+}
+/* line 111, ../sass/udo.sass */
+footer a, footer a:visited {
+  color: lightseagreen;
+  text-decoration: none;
+  font-weight: 700;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 116, ../sass/udo.sass */
+footer a:hover, footer a:visited:hover {
+  color: orangered;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 120, ../sass/udo.sass */
+  main {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 124, ../sass/udo.sass */
+  main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 128, ../sass/udo.sass */
+  footer {
+    font-size: 10px;
+  }
+
+  /* line 130, ../sass/udo.sass */
+  .container {
+    margin-bottom: 50px;
+  }
+
+  /* line 133, ../sass/udo.sass */
+  main legend {
+    font-size: 18px;
+  }
+  /* line 135, ../sass/udo.sass */
+  main input[type=text], main input[type=email], main textarea, main p {
+    font-size: 14px;
+  }
+}
