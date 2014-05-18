@@ -1,19 +1,25 @@
 if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to udo.";
-  };
 
-  Template.hello.events({
-    'click input': function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
-    }
-  });
 }
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
-    // code to run on server at startup
+    Meteor.startup(function(){
+      Meteor.Mandrill.config({
+        username: "USERNAME",
+        key: "KEY"
+      });
+    });
+
+    Meteor.methods({
+      sendMail: function(to, subject, htmlText){
+        Meteor.Mandrill.send({
+          to: to,
+          from: "MAIL",
+          subject: subject,
+          html: htmlText
+        });
+      }
+    });
   });
 }
