@@ -25,7 +25,12 @@ if (Meteor.isClient) {
 					subject+= " de "+from;
 					message+= "\n \n"+from;
 				}
-				Meteor.call('sendMail', to, subject, message);
+				Meteor.call('sendMail', to, subject, message, function(){
+					$('#email').val("");
+					$('#message').val("");
+					$('#name').val("");
+					$('#status').text("Message envoyé !");
+				});
 			}
 		}
 	});
@@ -43,7 +48,7 @@ if (Meteor.isServer) {
 		sendMail: function(to, subject, htmlText){
 			Meteor.Mandrill.send({
 				to: to,
-				from: "MAIL",
+				from: "FROM",
 				subject: subject,
 				html: htmlText
 			});
