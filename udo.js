@@ -2,7 +2,7 @@ if (Meteor.isClient) {
 	Template.hello.events({
 		'click #btn-submit': function(){
 			var to = $('#email').val(),
-				htmlText = $('#message').val(),
+				message = $('#message').val(),
 				from = $('#name').val(),
 				goodArray = [false, false];
 			
@@ -12,7 +12,7 @@ if (Meteor.isClient) {
 				$('#email').removeClass('error');
 				goodArray[0]=true;
 			}
-			if(htmlText=="")
+			if(message=="")
 				$('#message').addClass('error');
 			else{
 				$('#message').removeClass('error');
@@ -25,6 +25,7 @@ if (Meteor.isClient) {
 					subject+= " de "+from;
 					message+= "\n \n"+from;
 				}
+				console.log(message);
 				Meteor.call('sendMail', to, subject, message, function(){
 					$('#email').val("");
 					$('#message').val("");
@@ -39,7 +40,7 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
 	Meteor.startup(function(){
 		Meteor.Mandrill.config({
-			username: "USERNAME",
+			username: "USER",
 			key: "KEY"
 		});
 	});
@@ -48,7 +49,7 @@ if (Meteor.isServer) {
 		sendMail: function(to, subject, htmlText){
 			Meteor.Mandrill.send({
 				to: to,
-				from: "FROM",
+				from: "USER",
 				subject: subject,
 				html: htmlText
 			});
