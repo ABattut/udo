@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "mandrill": {}
+    },
+    "packages": {
+      "mandrill": {
+        "git": "https://github.com/timmyg/meteor-mandrill.git",
+        "tag": "v0.0.6",
+        "commit": "211be350989440403f8171031a97dd80b6c924ec"
+      }
+    }
+  }
+}

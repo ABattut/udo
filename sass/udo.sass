@@ -73,10 +73,10 @@ main
 		font-size: 16px
 		background: rgba(255,255,255,0.6)
 		+transition(all, 500ms, ease)
-		&:hover
-			border: 2px solid darken(lightseagreen, 5%)
 		&:focus
 			border: 2px solid goldenrod
+		&:required, &:invalid
+			+single-box-shadow(none)
 	.error
 		border: 2px solid indianred
 	input[type=button]

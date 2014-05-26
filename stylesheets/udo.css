@@ -178,10 +178,6 @@ main input, main textarea {
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 76, ../sass/udo.sass */
-main input:hover, main textarea:hover {
-  border: 2px solid #1c9c95;
-}
 /* line 78, ../sass/udo.sass */
 main input:focus, main textarea:focus {
   border: 2px solid goldenrod;
